@@ -26,7 +26,7 @@ def commitment(_dir: str, commit : str):
 	msg = f"[{commit}]"
 	if commit == "":
 		msg = ""
-	# os.system(f"git config --global --add safe.directory {_dir}")
+	os.system(f"git config --global --add safe.directory {_dir}")
 	os.system(f"cd {_dir}")
 	if os.path.exists("setup.json"):
 		file =  open("setup.json", "r")
@@ -34,8 +34,10 @@ def commitment(_dir: str, commit : str):
 		if data == "Error":
 			messagebox.showerror("ERROR", "Please add your setup file")
 		else:
-			# execution = f"git config --global user.name \"{data['name']}\" ;"
-			# execution += f" git config --global user.email \"{data['email']}\" ;"
+			execution = f"git config --global user.name \"{data['name']}\""
+			os.system(execution)
+			execution = f"git config --global user.email \"{data['email']}\""
+			os.system(execution)
 			execution = "git add -A"
 			os.system(execution)
 			execution = f"git commit -m \"{now()} {msg}\" "
