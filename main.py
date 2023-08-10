@@ -5,7 +5,6 @@ import os
 import json
 
 def commitment(_dir: str, commit : str):
-	os.system(f"git config --global --add safe.directory {_dir}")
 	os.system(f"cd {_dir}")
 	if not os.path.exists("setup.py"):
 		file =  open("setup.json", "r")
