@@ -20,3 +20,7 @@
 	"email": "sample@email.com"
 }
 ```
+
+---
+### Directory
+> Just copy the directory of your program from your terminal, then paste it to your entry box.
