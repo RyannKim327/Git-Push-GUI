@@ -39,6 +39,7 @@ def commitment(_dir: str, commit : str):
 			os.system(f"git add .")
 			os.system(f"git commit -m \"{now()} {msg}\"")
 			os.system(f"git push origin main")
+			messagebox.showinfo("SUCCESS", "Done")
 	else:
 		messagebox.showerror("ERROR", "Please add your setup file")
 

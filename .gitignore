@@ -1,5 +1,4 @@
 /setup.json
 /build
 /build/*
-/dist
 /*.spec
