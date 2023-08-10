@@ -28,7 +28,7 @@ def commitment(_dir: str, commit : str):
 		msg = ""
 	os.system(f"git config --global --add safe.directory {_dir}")
 	os.system(f"cd {_dir}")
-	if not os.path.exists("setup.py"):
+	if os.path.exists("setup.json"):
 		file =  open("setup.json", "r")
 		data = json.loads(file.read())
 		if data == "Error":
