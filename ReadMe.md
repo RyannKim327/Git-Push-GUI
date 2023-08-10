@@ -8,6 +8,7 @@
 ---
 ### Setup
 > Just create a setup.json where composed of dictionary.
+
 | Key | Value |
 | --- | --- |
 | name | your github username |
@@ -24,3 +25,7 @@
 ---
 ### Directory
 > Just copy the directory of your program from your terminal, then paste it to your entry box.
+
+---
+### Commit message
+> It is just optional, there's already a default message which is the time and date of the last commit
