@@ -20,7 +20,6 @@ def now():
 		hour = f"0{hour}"
 	if minute < 10:
 		minute = f"0{minute}"
-	
 	return f"{month}-{day}-{year} {hour}:{minute}"
 
 def commitment(_dir: str, commit : str):
